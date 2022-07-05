@@ -13,4 +13,24 @@ const images = [
   },
 ];
 
-const imsgesArrayEl = document.querySelector(images);
+const galleryEl = document.querySelector('.gallery');
+
+galleryEl.style.margin = 10;
+
+console.log(galleryEl);
+
+const makeGalleryItemsEl = ({ url, alt } = {}) => {
+  return `
+  <li class="item">
+    <img src="${url}" alt="${alt}" />
+  </li>
+  `;
+};
+
+const galleryItemsArray = images.map(el => {
+  return makeGalleryItemsEl(el);
+});
+
+// galleryEl.innerHTML = galleryItemsArray.join('');
+
+galleryEl.insertAdjacentHTML('afterbegin', galleryItemsArray.join(''));
