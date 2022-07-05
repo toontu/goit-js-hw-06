@@ -12,3 +12,5 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const imsgesArrayEl = document.querySelector(images);
