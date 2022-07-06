@@ -15,14 +15,18 @@ const images = [
 
 const galleryEl = document.querySelector('.gallery');
 
-galleryEl.style.margin = 10;
+galleryEl.style.listStyle = 'none';
+galleryEl.style.padding = '0';
+galleryEl.style.display = 'flex';
+galleryEl.style.flexWrap = 'wrap';
+galleryEl.style.justifyContent = 'space-around';
 
 console.log(galleryEl);
 
 const makeGalleryItemsEl = ({ url, alt } = {}) => {
   return `
   <li class="item">
-    <img src="${url}" alt="${alt}" />
+    <img src="${url}" alt="${alt}" width="400px" height="270px" />
   </li>
   `;
 };
