@@ -12,29 +12,3 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-
-const galleryEl = document.querySelector('.gallery');
-
-galleryEl.style.listStyle = 'none';
-galleryEl.style.padding = '0';
-galleryEl.style.display = 'flex';
-galleryEl.style.flexWrap = 'wrap';
-galleryEl.style.justifyContent = 'space-around';
-
-console.log(galleryEl);
-
-const makeGalleryItemsEl = ({ url, alt } = {}) => {
-  return `
-  <li class="item">
-    <img src="${url}" alt="${alt}" width="400px" height="270px" />
-  </li>
-  `;
-};
-
-const galleryItemsArray = images.map(el => {
-  return makeGalleryItemsEl(el);
-});
-
-// galleryEl.innerHTML = galleryItemsArray.join('');
-
-galleryEl.insertAdjacentHTML('afterbegin', galleryItemsArray.join(''));
