@@ -7,7 +7,7 @@
 const inputEl = document.querySelector('#validation-input');
 
 inputEl.addEventListener('blur', () => {
-  const dataCorrectLength = inputEl.dataset.length;
+  const dataCorrectLength = Number(inputEl.dataset.length);
 
   if (inputEl.value.length === dataCorrectLength) {
     checkAndRemove('invalid');
