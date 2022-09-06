@@ -9,8 +9,17 @@ const bodyEl = document.querySelector('body');
 const buttonEl = document.querySelector('.change-color');
 const spanEl = document.querySelector('.color');
 
+buttonEl.addEventListener('click', () => {
+  bodyEl.style.backgroundColor = getRandomHexColor();
+  spanEl.textContent = bodyEl.style.backgroundColor;
+});
+
+//
+// 2 вариант:
+
 // const onButtonClick = () => {
-//   bodyEl.style.backgroundColor = spanEl.textContent;
+//   bodyEl.style.backgroundColor = getRandomHexColor();
+//   spanEl.textContent = bodyEl.style.backgroundColor;
 // };
 
 // buttonEl.addEventListener('click', onButtonClick);
