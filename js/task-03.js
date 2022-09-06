@@ -41,6 +41,7 @@ galleryEl.style.cssText =
   'list-style: none; display: flex; flex-wrap: wrap; justify-content: space-around';
 
 //
+//
 //** чтобы не писать стили отдельно каждый, можно записать в одну строку через  elem.style.cssText = */
 //==============//
 // galleryEl.style.listStyle = 'none';
