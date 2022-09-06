@@ -23,9 +23,9 @@ decrementBtn.addEventListener('click', () => {
 //
 // еще вариант решения задачи:
 //
-// const counterEl = document.querySelector('#counter');
-// const incrementBtn = counterEl.querySelector('button[data-action="increment"]');
-// const decrementBtn = counterEl.querySelector('button[data-action="decrement"]');
+
+// const incrementBtn = document.querySelector('button[data-action="increment"]');
+// const decrementBtn = document.querySelector('button[data-action="decrement"]');
 // const counterValue = document.querySelector('#value');
 
 // incrementBtn.addEventListener('click', () => {
