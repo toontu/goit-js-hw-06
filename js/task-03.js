@@ -42,7 +42,7 @@ galleryEl.style.cssText =
 
 //
 //
-//** чтобы не писать стили отдельно каждый, можно записать в одну строку через  elem.style.cssText = */
+// чтобы не писать стили отдельно каждый, можно записать в одну строку через  elem.style.cssText = /
 //==============//
 // galleryEl.style.listStyle = 'none';
 // galleryEl.style.padding = '0';

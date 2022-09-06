@@ -20,7 +20,7 @@ nameInputEl.addEventListener('input', () => {
 // });
 
 //
-// еще вариант решенияЖ
+// еще вариант решения:
 
 // let result;
 // if (nameInputEl.value.length === 0) {

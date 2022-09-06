@@ -20,6 +20,7 @@ decrementBtn.addEventListener('click', () => {
   valueSummary.textContent = counterValue;
 });
 
+//
 // еще вариант решения задачи:
 //
 // const counterEl = document.querySelector('#counter');
