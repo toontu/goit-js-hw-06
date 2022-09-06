@@ -41,10 +41,10 @@ galleryEl.style.cssText =
   'list-style: none; display: flex; flex-wrap: wrap; justify-content: space-around';
 
 //
+//** чтобы не писать стили отдельно каждый, можно записать в одну строку через  elem.style.cssText = */
 //==============//
 // galleryEl.style.listStyle = 'none';
 // galleryEl.style.padding = '0';
 // galleryEl.style.display = 'flex';
 // galleryEl.style.flexWrap = 'wrap';
 // galleryEl.style.justifyContent = 'space-around';
-//** чтобы не писать стили отдельно каждый, можно записать в одну строку через  elem.style.cssText = */
