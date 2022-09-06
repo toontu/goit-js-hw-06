@@ -13,16 +13,31 @@ const images = [
   },
 ];
 
-// const galleryEl = document.querySelector('.gallery');
+const galleryEl = document.querySelector('.gallery');
 
+const makeGalleryItemsEl = ({ url, alt } = {}) => {
+  return `
+  <li class="item">
+    <img src="${url}" alt="${alt}" width="400px" height="270px" />
+  </li>
+  `;
+};
+
+const galleryItemsArray = images.map(el => {
+  return makeGalleryItemsEl(el);
+});
+
+galleryEl.insertAdjacentHTML('afterbegin', galleryItemsArray.join(''));
+// galleryEl.innerHTML = galleryItemsArray.join('');
+
+galleryEl.style.cssText =
+  'list-style: none; display: flex; flex-wrap: wrap; justify-content: space-around';
+
+//
+//==============//
 // galleryEl.style.listStyle = 'none';
 // galleryEl.style.padding = '0';
 // galleryEl.style.display = 'flex';
 // galleryEl.style.flexWrap = 'wrap';
 // galleryEl.style.justifyContent = 'space-around';
-
-// console.log(galleryEl);
-
-// ============
-// ** стили добавить можно через
-// elem.style.cssText = 'color: tomato; font-size: 30px; background-color: teal; padding: 20px';
+//** чтобы не писать стили отдельно каждый, можно записать в одну строку через  elem.style.cssText = */
