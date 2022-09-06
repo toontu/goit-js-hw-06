@@ -32,3 +32,17 @@ categoryEl.forEach(el => {
 //   console.log(`Category: ${nestedH2TextContentEl}`);
 //   console.log(`Elements: ${nestedLiItemsEl.length}`);
 // });
+
+// ================
+// Вариант 3:
+
+// const list = document.querySelector('#ingredients');
+
+// list.append(
+//   ...ingredients.map(ingredient => {
+//     const createItem = document.createElement('li');
+//     createItem.textContent = ingredient;
+//     createItem.classList.add('item');
+//     return createItem;
+//   })
+// );

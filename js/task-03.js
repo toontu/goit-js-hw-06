@@ -12,3 +12,17 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+// const galleryEl = document.querySelector('.gallery');
+
+// galleryEl.style.listStyle = 'none';
+// galleryEl.style.padding = '0';
+// galleryEl.style.display = 'flex';
+// galleryEl.style.flexWrap = 'wrap';
+// galleryEl.style.justifyContent = 'space-around';
+
+// console.log(galleryEl);
+
+// ============
+// ** стили добавить можно через
+// elem.style.cssText = 'color: tomato; font-size: 30px; background-color: teal; padding: 20px';
