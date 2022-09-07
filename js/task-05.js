@@ -4,11 +4,13 @@ const nameInputEl = document.querySelector('#name-input');
 const nameOutputEl = document.querySelector('#name-output');
 
 // простой вариант:
+const defaultOutputText = nameOutputEl.textContent;
+
 nameInputEl.addEventListener('input', () => {
   const inputVal = nameInputEl.value.trim();
 
   if (inputVal.length === 0) {
-    nameOutputEl.textContent = 'Anonymous';
+    nameOutputEl.textContent = defaultOutputText;
   } else {
     nameOutputEl.textContent = inputVal;
   }
@@ -33,3 +35,16 @@ nameInputEl.addEventListener('input', () => {
 //   result = inputVal;
 // }
 // nameOutputEl.textContent = result;
+
+//
+// первый вариант без дефолтного значения:
+
+// nameInputEl.addEventListener('input', () => {
+//   const inputVal = nameInputEl.value.trim();
+
+//   if (inputVal.length === 0) {
+//     nameOutputEl.textContent = 'Anonymous';
+//   } else {
+//     nameOutputEl.textContent = inputVal;
+//   }
+// });
