@@ -14,10 +14,12 @@ const onLoginFormSubmit = event => {
     elements: { email, password },
   } = event.currentTarget;
 
-  if (email.value === '' || password.value === '') {
+  const emailValue = email.value.trim();
+
+  if (emailValue === '' || password.value === '') {
     return alert('Будьласка, заповніть всі поля');
   }
-  console.log({ email: email.value, password: password.value });
+  console.log({ email: emailValue, password: password.value });
   event.currentTarget.reset();
 };
 
