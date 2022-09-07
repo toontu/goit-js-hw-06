@@ -5,27 +5,31 @@ const nameOutputEl = document.querySelector('#name-output');
 
 // простой вариант:
 nameInputEl.addEventListener('input', () => {
-  if (nameInputEl.value.length === 0) {
+  const inputVal = nameInputEl.value.trim();
+
+  if (inputVal.length === 0) {
     nameOutputEl.textContent = 'Anonymous';
   } else {
-    nameOutputEl.textContent = nameInputEl.value;
+    nameOutputEl.textContent = inputVal;
   }
 });
 
 //
 //  вариант с тернарником:
-
+//
 // nameInputEl.addEventListener('input', () => {
-//   nameOutputEl.textContent = nameInputEl.value.length === 0 ? 'Anonymous' : nameInputEl.value;
+//   const inputVal = nameInputEl.value.trim();
+//   nameOutputEl.textContent = inputVal.length === 0 ? 'Anonymous' : inputVal;
 // });
 
 //
-// еще вариант решения:
-
+// еще вариант решения (нужно еще добавить trim()):
+//
 // let result;
-// if (nameInputEl.value.length === 0) {
+// const inputVal = nameInputEl.value.trim();
+// if (inputVal.length === 0) {
 //   result = 'Anonymous';
 // } else {
-//   result = input.value;
+//   result = inputVal;
 // }
 // nameOutputEl.textContent = result;
