@@ -22,6 +22,7 @@ const images = [
 
 const galleryEl = document.querySelector('.gallery');
 
+// ? создаем одну карточку для галереи (с разметкой, с классами и аттрибутами)
 const makeGalleryItemsEl = ({ url, alt } = {}) => {
   return `
   <li class="item">
@@ -30,10 +31,12 @@ const makeGalleryItemsEl = ({ url, alt } = {}) => {
   `;
 };
 
+// ? из созданной карточки создаем массив карточек для галереи из исходного массива объектов images)
 const galleryItemsArray = images.map(el => {
   return makeGalleryItemsEl(el);
 });
 
+// ? созданный массив карточек вставляем в нужное место т.е. в galleryEl и соединяем в одну строку с помощью join('') т.к. нам нужно вставлять одной строкой)
 galleryEl.insertAdjacentHTML('afterbegin', galleryItemsArray.join(''));
 // galleryEl.innerHTML = galleryItemsArray.join('');
 
